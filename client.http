@@ -1,0 +1,32 @@
+// CRUD TESTING
+
+###
+POST http://localhost:5000/items
+Content-Type: application/json
+
+// example of parameters passed to create an "item.ts" type of object for mongoose
+{
+    "attribute": "first attribute for a new item",
+    "secondAttribute": "something else"
+}
+
+###
+GET http://localhost:5000/items
+
+###
+GET http://localhost:5000/items/WRONGURL
+
+###
+GET http://localhost:5000/items/60abd395983d002770789eb0
+
+###
+PUT http://localhost:5000/items/60abd395983d002770789eb0
+Content-Type: application/json
+
+{
+    "attribute": "Some content to be updated",
+    "secondAttribute": "something else"
+}
+
+###
+DELETE http://localhost:5000/items/123

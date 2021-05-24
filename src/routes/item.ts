@@ -1,5 +1,6 @@
 import { Schema, model } from 'mongoose';
 
+// item template schema for mongoose
 const itemSchema = new Schema({
     attribute: {
         type: String,
